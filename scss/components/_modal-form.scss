@@ -1,0 +1,184 @@
+/* modal form */
+.modal-form {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-form__label {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-form__title {
+    display: block;
+    width: 448px;
+    color: var(--secondary-txt-cl);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+}
+
+.modal-form__input {
+    margin: 0;
+    padding: 10px 40px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    margin-top: 4px;
+    transition: border-color 250ms var(--timing-function);
+
+    &:focus {
+        border-color: var(--accent-cl);
+        outline: none;
+    }
+
+    &:focus~.modal-form__icon {
+        fill: var(--accent-cl);
+    }
+}
+
+.modal-form__desk {
+    display: block;
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+}
+
+.modal-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translate(50%);
+    transition: transform 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
+}
+
+/* form-modal-textarea */
+
+.modal-form__textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 4px;
+    color: rgba(117, 117, 117, 0.50);
+    font-family: var(--main-font);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    background-color: transparent;
+    resize: none;
+    transition: border-color 250ms var(--timing-function);
+
+    &:focus {
+        border-color: var(--accent-cl);
+        outline: none;
+    }
+}
+
+/*  Умови договору   checkbox */
+.modal-form__policy-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.modal-form__custon-checkbox {
+    width: 16px;
+    height: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    outline: 2px solid var(--secondary-txt-cl);
+    outline-offset: -2px;
+    transition: background-color 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
+    transition: outline 250ms var(--timing-function);
+
+    .modal-form__checkbox:checked+& {
+        background-color: var(--accent-cl);
+        fill: #ffffff;
+        outline: var(--accent-cl);
+    }
+
+    .modal-form__checkbox:focus~& {
+        outline: 2px solid var(--accent-cl);
+        outline-offset: -2px;
+    }
+}
+
+.modal-form__icon-checkbox {
+    opacity: 0;
+    transition: opacity 250ms var(--timing-function);
+}
+
+.modal-form__checkbox:checked+.modal-form__custon-checkbox .modal-form__icon-checkbox {
+    opacity: 1;
+}
+
+.modal-form__desk-checkbox {
+    margin-top: 20px;
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71%;
+    letter-spacing: 0.42px;
+}
+
+.modal-form__span-desk {
+    padding-left: 4px;
+    color: var(--accent-cl);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71%;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+}
+
+/*  form-modal-btn  */
+
+.modal-form__btn--send {
+    display: block;
+    min-width: 152px;
+    min-height: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 52px;
+    padding-bottom: 10px;
+    padding-left: 52px;
+    color: var(--main-bg-cl);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88%;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background-color: var(--accent-cl);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms var(--timing-function);
+    border: transparent;
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+}

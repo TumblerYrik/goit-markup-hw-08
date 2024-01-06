@@ -1,0 +1,63 @@
+/* ======================
+==  section Feature  Особливості
+========================*/
+.feature {
+    background-color: var(--main-bg-cl);
+    padding-bottom: 0;
+}
+
+.feature__container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.feature__list {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+.feature__item {
+    margin-right: 30px;
+    width: 270px;
+    flex-shrink: 0;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.feature__rectangle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+.feature__subtitle {
+    margin-bottom: 10px;
+    color: var(--secondary-txt-cl);
+    font-family: var(--main-txt-cl);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.feature__desc {
+    flex-shrink: 0;
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}

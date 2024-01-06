@@ -1,0 +1,16 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    /* text colors */
+    --accent-cl: #2196f3;
+    --main-txt-cl: #757575;
+    --secondary-txt-cl: #212121;
+    /* bacgraund-colors */
+    --darc-bg-cl: #2f303a;
+    --main-bg-cl: #fff;
+    --secondary-bg-cl: #f5f4fa;
+    /* grid items */
+    --items: 1;
+    --indent: 30px;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

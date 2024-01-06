@@ -1,0 +1,75 @@
+/* ===============================
+===== Модальне вікно ===========
+=================================*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms var(--timing-function),
+        visibility 250ms var(--timing-function);
+    z-index: 3;
+
+    /* Початковий стан елементу перед анімаціей */
+
+    &.is-hidden .modal__wrapper {
+        transform: translate(-50%, -50%) scale(0.4);
+    }
+
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.modal__wrapper {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--timing-function);
+    width: 528px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    z-index: 4;
+}
+
+.modal-btn--close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.10);
+    background-color: transparent;
+    stroke-width: 1px;
+    transition: fill 250ms var(--timing-function);
+    transition: border-color 250ms var(--timing-function);
+
+    &--close:hover,
+    &--close:focus {
+        fill: var(--accent-cl);
+    }
+}
+
+.modal__icon-close {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
