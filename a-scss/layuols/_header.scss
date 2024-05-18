@@ -1,0 +1,60 @@
+/* 
+|=====================
+|  = header section =
+======================
+*/
+.header {
+    position: relative;
+    background: var(--main-bg-cl);
+    border-bottom: 1px solid #ececec;
+}
+
+.heder__container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* === мобільна кнопка відкриття === */
+
+.menu-toggle {
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.menu-page {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.menu-grup {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

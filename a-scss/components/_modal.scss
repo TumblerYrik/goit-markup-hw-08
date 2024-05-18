@@ -3,6 +3,9 @@
 =================================*/
 
 .backdrop {
+    padding: 40px 15px;
+    overflow-y: scroll;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -13,38 +16,44 @@
     transition: opacity 250ms var(--timing-function),
         visibility 250ms var(--timing-function);
     z-index: 3;
+}
 
-    /* Початковий стан елементу перед анімаціей */
+/* Початковий стан елементу перед анімаціей */
 
-    &.is-hidden .modal__wrapper {
-        transform: translate(-50%, -50%) scale(0.4);
-    }
+.backdrop.is-hidden .modal__wrapper {
+    transform: translate(-50%, -50%) scale(0.4);
+}
 
-    &.is-hidden .modal {
-        transform: translate(-50%, -50%) scale(0.9);
-    }
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
 
-    &.is-hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal__wrapper {
     padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
-    width: 528px;
+    width: 100%;
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     z-index: 4;
+
+    @media screen and (min-width: 768px) {
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 528px;
+    }
 }
+
 
 .modal-btn--close {
     position: absolute;
@@ -56,16 +65,16 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border-color: rgba(0, 0, 0, 0.10);
+    border-color: rgba(0, 0, 0, 0.1);
     background-color: transparent;
     stroke-width: 1px;
     transition: fill 250ms var(--timing-function);
     transition: border-color 250ms var(--timing-function);
+}
 
-    &--close:hover,
-    &--close:focus {
-        fill: var(--accent-cl);
-    }
+.modal-btn--close:hover,
+.modal-btn--close:focus {
+    fill: var(--accent-cl);
 }
 
 .modal__icon-close {

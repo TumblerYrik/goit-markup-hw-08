@@ -1,0 +1,62 @@
+/*=========================
+==== section Hero  
+==========================*/
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--darc-bg-cl);
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero/Img.jpg);
+}
+
+.hero__name {
+    width: 696px;
+    color: #fff;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-color: #2196f3;
+    min-width: 152px;
+    min-height: 30px;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    padding: 10px, 32px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    transition: background-color 250ms var(--timing-function);
+}
+
+.btn:hover,
+.btn:focus {
+    border-radius: 4px;
+    background-color: var(--accent-cl);
+}

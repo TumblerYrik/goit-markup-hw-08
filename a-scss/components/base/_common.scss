@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
+    font-size: 14px;
+    letter-spacing: 0.42px;
+}
+
+
+
+.section {
+    @include mq(mobile) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include mq(desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
