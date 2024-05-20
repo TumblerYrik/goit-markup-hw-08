@@ -1,0 +1,28 @@
+{
+  "name": "goit-markup-hw-08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-markup-hw-08/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TumblerYrik/goit-markup-hw-08.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TumblerYrik/goit-markup-hw-08/issues"
+  },
+  "homepage": "https://TumblerYrik.github.io/goit-markup-hw-08",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  }
+}
