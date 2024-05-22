@@ -2,108 +2,33 @@
 ==== section Hero  
 ==========================*/
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--darc-bg-cl);
-
-    @include mq(desktop) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-}
-
-.hero__container {
-    @include mq(desktop) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
 }
 
 .overlay {
-    width: 100%;
-    height: 100%;
+    max-width: 1600px;
+    height: 600px;
     flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
-    background-repeat: no-repeat;
     background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero/img_mob.jpg);
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/hero/img_mob@2x.jpg);
-    }
-
-    @include mq(tablet) {
-        width: 768px;
-        height: 400px;
-
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/hero/img_tab.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../images/hero/img_tab@2x.jpg);
-        }
-    }
-
-    @include mq(desktop) {
-        width: 1600px;
-        height: 600px;
-
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/hero/Img_desk.jpg);
-
-        /* @include mq(retina) */
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../images/hero/Img_desk@2x.jpg);
-        }
-    }
+            rgba(47, 48, 58, .4),
+            rgba(47, 48, 58, .4)),
+        url(../images/hero/Img.jpg);
 }
 
 .hero__name {
-    min-width: 360px;
+    width: 696px;
     color: #fff;
     text-align: center;
     font-family: var(--main-font);
-    font-size: 26px;
+    font-size: 44px;
     font-weight: 900;
-    line-height: 1.61;
-    letter-spacing: 1.56px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
-
-    @include mq(mobile) {
-        width: 360px;
-    }
-
-    @include mq(desktop) {
-        width: 696px;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 2.64px;
-    }
 }

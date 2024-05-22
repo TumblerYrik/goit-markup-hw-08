@@ -5,19 +5,7 @@
     align-items: baseline;
     flex-direction: column;
     margin-right: auto;
-    margin-left: auto;
-
-    @media screen and (min-width: 768px) {
-        margin-top: 0;
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: inline-flex;
-        margin: 0;
-        padding: 0;
-    }
+    margin-left: 70px;
 }
 
 .socials-footer__list {
@@ -53,8 +41,6 @@
 }
 
 .socials-footer__desk {
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 20px;
     color: var(--main-bg-cl);
     font-family: var(--main-font);
@@ -62,9 +48,4 @@
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-
-    @media screen and (min-width: 1200px) {
-        margin-right: 0;
-        margin-left: 0;
-    }
 }

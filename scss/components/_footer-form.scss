@@ -2,40 +2,20 @@
 
 .form {
     display: flex;
-    flex-direction: column;
-    max-width: 450px;
-    height: 156px;
+    align-items: flex-end;
+    width: 570px;
+    height: 86px;
+    margin: 0;
     padding: 0;
-
-    @media screen and (min-width: 768px) {
-        width: 450px;
-        height: 156px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        width: 570px;
-        height: 86px;
-        margin: 0;
-        padding: 0;
-    }
 }
 
 .form__mail {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0;
     padding: 0;
-
-    @media screen and (min-width: 1200px) {
-        align-items: flex-start;
-    }
 }
+
 
 .form__label {
     color: var(--main-bg-cl);
@@ -49,8 +29,7 @@
 
 .form__input {
     padding: 15px;
-    max-width: 450px;
-    width: 100%;
+    width: 358px;
     height: 50px;
     flex-shrink: 0;
     color: rgba(255, 255, 255, 0.60);
@@ -59,17 +38,6 @@
     background-color: rgba(33, 150, 243, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: border-color 250ms var(--timing-function);
-
-    @media screen and (min-width: 768px) {
-        width: 450px;
-        height: 50px;
-        flex-shrink: 0;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 358px;
-        height: 50px;
-    }
 
     &:focus {
         border-color: rgba(255, 255, 255, 0.30);

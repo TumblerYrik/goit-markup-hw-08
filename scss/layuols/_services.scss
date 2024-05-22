@@ -2,10 +2,6 @@
 ==section Services     Чим ми займаємося 
 ========================== */
 .services {
-    @media screen and (max-width: 1198px) {
-        display: none;
-    }
-
     background-color: var(--main-bg-cl);
     z-index: 1;
 }
