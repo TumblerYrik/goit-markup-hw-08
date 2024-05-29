@@ -19,7 +19,7 @@
   },
   "homepage": "https://TumblerYrik.github.io/goit-markup-hw-08",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^1.7.2",
     "body-scroll-lock": "^4.0.0-beta.0",
     "modern-normalize": "^1.1.0"
   },

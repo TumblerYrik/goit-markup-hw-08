@@ -104,9 +104,14 @@
 <symbol id="icon-check-solid-1" viewBox="0 0 28 32">
 <path d="M27.413 6.588c0.781 0.781 0.781 2.050 0 2.831l-16 16c-0.781 0.781-2.050 0.781-2.831 0l-8-8c-0.781-0.781-0.781-2.050 0-2.831s2.050-0.781 2.831 0l6.587 6.581 14.587-14.581c0.781-0.781 2.050-0.781 2.831 0z"></path>
 </symbol>
+<symbol id="icon-menu_40px" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
 <symbol id="icon-telegram" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 0l-32 18 10.227 3.787 15.773-14.787-11.997 16.187 0.009 0.003-0.012-0.003v8.813l5.735-6.691 7.267 2.691 4.999-28z"></path>
 </symbol>
   </defs>
+  <symbol id="icon-menu" viewBox="0 0 32 32">
+<path fill="#2196f3" style="fill: var(--color1, #2196f3)" d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
 </svg>
-
