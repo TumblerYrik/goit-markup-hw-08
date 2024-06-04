@@ -23,7 +23,7 @@
           class="logo__part">Studio</span></a>
       <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-          <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+          <use class="icon-menu" href="./images/sprite.svg#icon-menu_togle"></use>
         </svg>
       </button>
       <nav class="nav">
@@ -59,6 +59,7 @@
       </nav>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
+    <div>
       <button type="button" class="menu-close js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="40" height="40" aria-label="Перемикач мобільного меню">
           <use class="icon-cross" href="./images/sprite.svg#icon-image"></use>
@@ -75,15 +76,17 @@
           <a class="link mobile-menu__link" href="#contacts">Контакти</a>
         </li>
       </ul>
+    </div>
+    <div class="mobile-wraper">
       <ul class="mobile-grup">
+        <li class="mobile-grup__item">
+          <a class="link mobile-grup__phone text header-grup__link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
         <li class="mobile-grup__item">
           <a class="link mobile-grup__mailto mail header-grup__link" href="mailto:info@devstudio.com">
             info@devstudio.com
-          </a>
-        </li>
-        <li class="header-grup__item">
-          <a class="link mobile-grup__phone text header-grup__link" href="tel:+380961111111">
-            +38 096 111 11 11
           </a>
         </li>
       </ul>
@@ -105,6 +108,7 @@
           </a>
         </li>
       </ul>
+    </div>
     </div>
   </header>
   <main class="main">
@@ -232,15 +236,15 @@
         <h2 class="services__title">Чим ми займаємося</h2>
         <ul class="services__list">
           <li class="services__item">
-            <img src="./images/services/img-(1).jpg" alt="набір тексту на клавіатуре" width="370" height="294" />
+            <img src="./images/services/services(1)1x.jpg" alt="набір тексту на клавіатуре" width="370" height="294" />
             <p class="services__desk">Десктопні додатки</p>
           </li>
           <li class="services__item">
-            <img src="./images/services/img-(2).jpg" alt="робота з телефону" width="370" height="294" />
+            <img src="./images/services/services(2)1x.jpg" alt="робота з телефону" width="370" height="294" />
             <p class="services__desk">Мобільні додатки</p>
           </li>
           <li class="services__item">
-            <img src="./images/services/img-(3).jpg" alt="робота з планшета" width="370" height="294" />
+            <img src="./images/services/services(3)1x.jpg" alt="робота з планшета" width="370" height="294" />
             <p class="services__desk">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -252,7 +256,8 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img src="./images/team/img.jpg" alt="чоловік в окулярах" />
+            <img srcset="" src="./images/team/img.jpg" alt="чоловік в окулярах"
+              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw " />
             <div class="team__blok">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__desc">Product Designer</p>
@@ -518,9 +523,6 @@
       </form>
     </div>
   </footer>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
   <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 

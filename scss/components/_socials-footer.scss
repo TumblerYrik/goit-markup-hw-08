@@ -2,10 +2,20 @@
 
 .socials-footer {
     display: flex;
-    align-items: baseline;
     flex-direction: column;
-    margin-right: auto;
-    margin-left: 70px;
+    align-items: center;
+    margin-top: 60px;
+
+     @media screen and (min-width: 768px) {
+        margin-right: 70px;
+     }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        margin-right: auto;
+        margin-left: 70px;
+    }
 }
 
 .socials-footer__list {

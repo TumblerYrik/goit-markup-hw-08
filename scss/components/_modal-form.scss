@@ -13,7 +13,7 @@
 
 .modal-form__title {
     display: block;
-    width: 448px;
+    width: 379px;
     color: var(--secondary-txt-cl);
     text-align: center;
     font-family: var(--main-font);
@@ -21,6 +21,11 @@
     font-weight: 700;
     letter-spacing: 0.6px;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+        height: 23px;
+    }
 }
 
 .modal-form__input {

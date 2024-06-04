@@ -1,16 +1,17 @@
-
 @import "./utils/vars";
 @import "./utils/visually-hidden";
 @import "./base/common";
 @import "./base/reset";
 @import "./base/container";
 @import "./base/card-set";
-@import"./layuols/header";
+@import "./layuols/header";
+@import "./layuols/navigation";
+@import "./layuols/heder-grup";
 @import "./components/mobile-menu";
 @import "./components/logo";
 @import "./layuols/hero";
 @import "./components/btn";
-@import "./components/modai.scss";
+@import "./components/modal";
 @import "./components/modal-form";
 @import "./layuols/feature";
 @import "./layuols/services";
@@ -23,5 +24,3 @@
 @import "./layuols/footer";
 @import "./components/socials-footer";
 @import "./components/footer-form";
-
-

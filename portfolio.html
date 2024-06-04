@@ -15,11 +15,16 @@
 </head>
 
 <body>
-  <!-- header section -->
+
   <header class="header">
     <div class="container heder__container">
       <a class="link logo" href="./index.html" aria-label="site-logo-WebStudio">Web<span
           class="logo__part">Studio</span></a>
+      <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="icon-menu" href="./images/sprite.svg#icon-menu_togle"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="navigation__list list">
           <li class="navigation__item">
@@ -48,12 +53,64 @@
         </ul>
       </nav>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div>
+        <button type="button" class="menu-close js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="icon-cross" href="./images/sprite.svg#icon-image"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__title current" href="#studio">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="#contacts">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-wraper">
+        <ul class="mobile-grup">
+          <li class="mobile-grup__item">
+            <a class="link mobile-grup__phone text header-grup__link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-grup__item">
+            <a class="link mobile-grup__mailto mail header-grup__link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-social__list">
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="" target="_blank" aria-label="значок Instagram">Instagram
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="" target="_blank" aria-label="значок Twitter">Twitter
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="" target="_blank" aria-label="значок Facebook">Facebook
+            </a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="" target="_blank" aria-label="значок Linkedin">Linkedin
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
+
   <main>
-    <!-- section Portfolio -->
+
     <section class="portfolio section">
       <div class="container portfolio__container">
-        <!-- Логічний заголовок -->
         <h2 class="visually-hidden">Portfolio</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
@@ -255,8 +312,9 @@
         </ul>
       </div>
     </section>
+
   </main>
-  <!-- footer -->
+
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__wrapper">
@@ -274,7 +332,6 @@
           </ul>
         </address>
       </div>
-      <!-- socials-footer -->
       <div class="socials-footer">
         <p class="socials-footer__desk">приєднуйтесь</p>
         <ul class="socials-footer__list">
@@ -308,7 +365,6 @@
           </li>
         </ul>
       </div>
-      <!-- Футер форма  e-mail input -->
       <form class="form" name="contact-form">
         <div class="form__mail">
           <label class="form__label" for="footer-mail">Підпишіться на розсилку</label>
@@ -322,6 +378,7 @@
       </form>
     </div>
   </footer>
+
 </body>
 
 </html>

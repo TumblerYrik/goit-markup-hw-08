@@ -28,11 +28,15 @@
         display: none;
     }
 
-    &:hover,
-    &:focus {
-        background-color: rgba(0, 0, 0, 0.1);
-    }
 }
+
+.icon-menu:hover,
+.icon-menu:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    fill: #2196f3;
+}
+
+
 
 .menu-toggle.icon-cross {
     display: none;
@@ -46,151 +50,4 @@
     display: none;
 }
 
-/*   Oсновна новігація сайту  navigation   */
 
-.nav {
-    @media (max-width: 767px) {
-        display: none;
-    }
-
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation__list {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation__item {
-    margin-right: 50px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.navigation__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--secondary-txt-cl);
-    font-family: var(--main-font);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    transition: color 250ms var(--timing-function);
-}
-
-.navigation__title {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--accent-cl);
-    font-family: var(--main-font);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-
-    &.current::after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        content: "";
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--accent-cl);
-    }
-}
-
-/*   header__grup   */
-
-
-@media screen and (min-width: 768px) {
-    .header-grup {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        margin-left: 60px;
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    .header-grup__item {
-        margin-bottom: 20px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .header-grup {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        margin-left: 280px;
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    .header-grup__item {
-        margin-right: 50px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
-
-
-.header-grup__mailto {
-    color: var(--main-txt-cl);
-    font-family: var(--main-font);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    transition: color 250ms var(--timing-function);
-}
-
-.header-grup__phone {
-    color: var(--main-txt-cl);
-    font-family: var(--main-font);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    transition: color 250ms var(--timing-function);
-}
-
-.mail:hover,
-.mail:focus {
-    color: var(--accent-cl);
-}
-
-.text:hover,
-.text:focus {
-    color: var(--accent-cl);
-}
-
-.header-grup__link {
-    display: flex;
-    align-items: center;
-    color: #757575;
-}
-
-.header-grup__icon {
-    margin-right: 10px;
-    fill: currentColor;
-}

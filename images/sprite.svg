@@ -112,6 +112,10 @@
 </symbol>
   </defs>
   <symbol id="icon-menu" viewBox="0 0 32 32">
-<path fill="#2196f3" style="fill: var(--color1, #2196f3)" d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+<path fill="#212121;" style="fill: var(--color1, #212121)" d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
+<symbol id="icon-menu_togle" viewBox="0 0 32 32">
+<path d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path>
 </symbol>
 </svg>
+
