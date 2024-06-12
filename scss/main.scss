@@ -4,6 +4,7 @@
 @import "./base/reset";
 @import "./base/container";
 @import "./base/card-set";
+@import "./base/modern-normalise";
 @import "./layuols/header";
 @import "./layuols/navigation";
 @import "./layuols/heder-grup";
@@ -17,9 +18,9 @@
 @import "./layuols/services";
 @import "./layuols/team";
 @import "./components/socials";
-@import "./layuols/portfolio";
+@import "./layuols/portfolio-filtr";
 @import "./components/portfolio-btn";
-@import "./components/portfolio-grid";
+@import "./layuols/portfolio-img-grid";
 @import "./layuols/clients";
 @import "./layuols/footer";
 @import "./components/socials-footer";

@@ -1,14 +1,12 @@
-/* socials-footer */
-
 .socials-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
 
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         margin-right: 70px;
-     }
+    }
 
     @media screen and (min-width: 1200px) {
         display: flex;

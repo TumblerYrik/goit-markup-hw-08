@@ -10,15 +10,15 @@
         mobileMenu.classList.toggle("is-open");
 
         const scrollLockMethod = !isMenuOpen
-            ? "disableBodyScroll"
-            : "enableBodyScroll";
-        bodyScrollLock[scrollLockMethod](document.body);
+            ? bodyScrollLock.disableBodyScroll
+            : bodyScrollLock.enableBodyScroll;
+        scrollLockMethod(document.body);
     };
 
     openMenuBtn.addEventListener("click", toggleMenu);
     closeMenuBtn.addEventListener("click", toggleMenu);
 
-    // Close the mobile menu on wider screens if the device orientation changes
+    // Закрытие мобильного меню на более широких экранах, если устройство меняет ориентацию
     window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
         if (!e.matches) return;
         mobileMenu.classList.remove("is-open");

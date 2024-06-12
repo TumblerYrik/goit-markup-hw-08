@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <div class="container heder__container">
       <a class="link logo" href="./index.html" aria-label="site-logo-WebStudio">Web<span
@@ -108,7 +107,6 @@
   </header>
 
   <main>
-
     <section class="portfolio section">
       <div class="container portfolio__container">
         <h2 class="visually-hidden">Portfolio</h2>
@@ -141,7 +139,13 @@
                     особу.
                   </p>
                 </div>
-                <img class="img__card" src="./images/portfolio/img.jpg" alt="три фото" width="370" height="294" />
+                <img class="img__card" srcset="
+                      ./images/portfolio/mob1.jpg    1x,
+                      ./images/portfolio/mob1@2x.jpg 2x
+                    " sizes="(min-width: 1200px) 370px,
+                    (min-width: 768px) 354px,
+                      (min-width: 480px) 450px, 100vw" src="./images/portfolio/mob1.jpg" alt="три фото" width="370"
+                  height="294" />
               </div>
               <div class="img__blok">
                 <h3 class="img__title">Технокряк</h3>
@@ -163,9 +167,7 @@
                 <img class="img__card" src="./images/portfolio/img-(1).jpg" alt="баскетбол" width="370" height="294" />
               </div>
               <div class="img__blok">
-                <h3 class="img__title">
-                  Постер New Orlean vs Golden Star
-                </h3>
+                <h3 class="img__title">Постер New Orlean vs Golden Star</h3>
                 <p class="img__name">Дизайн</p>
               </div>
             </a>
@@ -312,7 +314,6 @@
         </ul>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -333,7 +334,7 @@
         </address>
       </div>
       <div class="socials-footer">
-        <p class="socials-footer__desk">приєднуйтесь</p>
+        <b class="socials-footer__desk">приєднуйтесь</b>
         <ul class="socials-footer__list">
           <li class="socials-footer__item">
             <a class="socials-footer__link link" href="" target="_blank" aria-label="значок Instagram ">
@@ -367,7 +368,7 @@
       </div>
       <form class="form" name="contact-form">
         <div class="form__mail">
-          <label class="form__label" for="footer-mail">Підпишіться на розсилку</label>
+          <b class="form__label" for="footer-mail">Підпишіться на розсилку</b>
           <input class="form__input" type="text" name="footer-mail" id="footer-mail" placeholder="E-mail" />
         </div>
         <button class="form__btn" type="submit">
@@ -378,7 +379,7 @@
       </form>
     </div>
   </footer>
-
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

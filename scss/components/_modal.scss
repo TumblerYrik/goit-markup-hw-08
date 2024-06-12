@@ -1,7 +1,3 @@
-/* ===============================
-===== Модальне вікно ===========
-=================================*/
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -12,9 +8,8 @@
     opacity: 1;
     transition: opacity 250ms var(--timing-function),
         visibility 250ms var(--timing-function);
+    overflow-y: scroll;
     z-index: 9;
-
-    /* Початковий стан елементу перед анімаціей */
 
     &.is-hidden .modal__wrapper {
         transform: translate(-50%, -50%) scale(0.4);
