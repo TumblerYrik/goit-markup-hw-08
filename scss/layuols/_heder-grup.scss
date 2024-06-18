@@ -31,15 +31,10 @@
         padding: 0;
     }
 
-    .header-grup__item {
-        margin-right: 50px;
-
-        &:last-child {
-            margin-right: 0;
-        }
+    .header-grup__item+.header-grup__item {
+        margin-left: 50px;
     }
 }
-
 
 .header-grup__mailto {
     color: var(--main-txt-cl);

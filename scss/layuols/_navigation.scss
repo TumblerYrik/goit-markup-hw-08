@@ -21,17 +21,14 @@
 .navigation__list {
     display: flex;
     align-items: center;
-    
+
     margin: 0;
     padding: 0;
 }
 
-.navigation__item {
-    margin-right: 50px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+.navigation__item+.navigation__item {
+    margin-left: 50px;
 }
 
 .navigation__link {

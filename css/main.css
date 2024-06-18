@@ -492,11 +492,8 @@ summary {
   padding: 0;
 }
 
-.navigation__item {
-  margin-right: 50px;
-}
-.navigation__item:last-child {
-  margin-right: 0;
+.navigation__item + .navigation__item {
+  margin-left: 50px;
 }
 
 .navigation__link {
@@ -577,11 +574,8 @@ summary {
     margin-bottom: 0;
     padding: 0;
   }
-  .header-grup__item {
-    margin-right: 50px;
-  }
-  .header-grup__item:last-child {
-    margin-right: 0;
+  .header-grup__item + .header-grup__item {
+    margin-left: 50px;
   }
 }
 .header-grup__mailto {
@@ -832,6 +826,7 @@ summary {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--darc-bg-cl);
+  text-align: center;
 }
 
 .overlay {
@@ -890,7 +885,6 @@ summary {
 .hero__name {
   width: 360px;
   color: #fff;
-  text-align: center;
   font-family: var(--main-font);
   font-size: 26px;
   font-weight: 900;
@@ -916,7 +910,6 @@ summary {
   .hero__name {
     width: 696px;
     color: #fff;
-    text-align: center;
     font-family: var(--main-font);
     font-size: 44px;
     font-weight: 900;
@@ -1637,11 +1630,8 @@ summary {
   padding: 0;
 }
 
-.socials__item {
-  margin-right: 10px;
-}
-.socials__item:last-child {
-  margin-right: 0;
+.socials__item + .socials__item {
+  margin-left: 10px;
 }
 
 .socials__link {
