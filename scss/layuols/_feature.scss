@@ -3,6 +3,12 @@
     padding-bottom: 0;
 }
 
+.section {
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
+}
+
 .feature__list {
     margin-top: -15px;
     margin-left: -15px;

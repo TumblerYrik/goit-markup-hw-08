@@ -1,21 +1,21 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    color: var(--main-txt-cl);
-    font-family: var(--main-font);
-    font-size: 14px;
-    letter-spacing: 0.42px;
+  color: var(--main-txt-cl);
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.42px;
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
