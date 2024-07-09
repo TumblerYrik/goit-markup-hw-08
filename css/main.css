@@ -828,6 +828,12 @@ summary {
   background-color: var(--darc-bg-cl);
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .overlay {
   width: 100%;
@@ -1249,12 +1255,6 @@ summary {
 .feature {
   background-color: var(--main-bg-cl);
   padding-bottom: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-  }
 }
 
 .feature__list {
