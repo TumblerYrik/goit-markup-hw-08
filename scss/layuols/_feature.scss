@@ -4,9 +4,11 @@
 }
 
 .feature__list {
-    margin-top: -15px;
-    margin-left: -15px;
-    padding: 0;
+    @media screen and (min-width: 480px) {
+        margin-top: -15px;
+        margin-left: -15px;
+        padding: 0;
+    }
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -22,10 +24,12 @@
 }
 
 .feature__item {
-    margin-top: 15px;
-    margin-left: 15px;
-    flex-basis: 100%;
-    flex-shrink: 0;
+    @media screen and (min-width: 480px) {
+        margin-top: 15px;
+        margin-left: 15px;
+        flex-basis: 100%;
+        flex-shrink: 0;
+    }
 
     @media screen and (min-width: 768px) {
         flex-basis: calc(100% / 2 - 15px);
@@ -41,9 +45,12 @@
     align-items: center;
     justify-content: center;
     background-color: #f5f4fa;
-    width: 450px;
     height: 120px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 354px;
