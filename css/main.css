@@ -6,8 +6,8 @@
   --accent-cl: #2196f3;
   --main-txt-cl: #757575;
   --secondary-txt-cl: #212121;
-  /* bacgraund-colors */
-  --darc-bg-cl: #2f303a;
+  /*  background-colors */
+  --alt-bg-cl: #2f303a;
   --main-bg-cl: #fff;
   --secondary-bg-cl: #f5f4fa;
   /* grid items */
@@ -825,7 +825,7 @@ summary {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  background-color: var(--darc-bg-cl);
+  background-color: var(--alt-bg-cl);
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -889,17 +889,23 @@ summary {
 }
 
 .hero__name {
-  width: 360px;
+  width: 100%;
   color: #fff;
   font-family: var(--main-font);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 6%;
+  line-height: 1.24;
   text-align: center;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .hero__name {
+    font-size: 26px;
+    line-height: 1.36;
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__name {
@@ -912,7 +918,7 @@ summary {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--darc-bg-cl);
+    background-color: var(--alt-bg-cl);
   }
   .hero__name {
     width: 696px;
@@ -1257,10 +1263,12 @@ summary {
   padding-bottom: 0;
 }
 
-.feature__list {
-  margin-top: -15px;
-  margin-left: -15px;
-  padding: 0;
+@media screen and (min-width: 480px) {
+  .feature__list {
+    margin-top: -15px;
+    margin-left: -15px;
+    padding: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .feature__list {
@@ -1289,13 +1297,15 @@ summary {
   }
 }
 
-.feature__item {
-  margin-top: 15px;
-  margin-left: 15px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+@media screen and (min-width: 480px) {
+  .feature__item {
+    margin-top: 15px;
+    margin-left: 15px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .feature__item {
@@ -1321,9 +1331,14 @@ summary {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #f5f4fa;
-  width: 450px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .feature__rectangle {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .feature__rectangle {
@@ -2016,7 +2031,7 @@ summary {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--darc-bg-cl);
+  background-color: var(--alt-bg-cl);
 }
 
 .footer__container {
