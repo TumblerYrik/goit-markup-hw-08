@@ -4,10 +4,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: start;
     }
 
     @media screen and (min-width: 1200px) {}
@@ -61,16 +63,23 @@
 }
 
 .img__item {
-    width: 450px;
+    width: 100%;
     --items: 1;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 404px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 354px;
+        height: 440px;
         --items: 2;
     }
 
     @media screen and (min-width: 1200px) {
         width: 370px;
+        height: 404px;
         --items: 3;
     }
 }

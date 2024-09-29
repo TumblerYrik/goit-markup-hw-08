@@ -1,7 +1,7 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--indent);
+    margin: var(--indent);
 }
 
 .grid-item {

@@ -39,6 +39,11 @@
     outline: none;
     cursor: pointer;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-cl);
+    }
 }
 
 .icon-cross:hover,

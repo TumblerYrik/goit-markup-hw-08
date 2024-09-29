@@ -122,7 +122,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: var(--indent);
+  margin: var(--indent);
 }
 
 .grid-item {
@@ -678,6 +678,9 @@ summary {
   outline: none;
   cursor: pointer;
   background-color: transparent;
+}
+.menu-close:hover, .menu-close:focus {
+  fill: var(--accent-cl);
 }
 
 .icon-cross:hover,
@@ -1758,8 +1761,6 @@ summary {
   background-color: #2196f3;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  width: 73px;
-  height: 38px;
 }
 
 .portfolio__btn {
@@ -1809,6 +1810,9 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .img__grid {
@@ -1818,6 +1822,9 @@ summary {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 .img__link {
@@ -1879,18 +1886,26 @@ summary {
 }
 
 .img__item {
-  width: 450px;
+  width: 100%;
   --items: 1;
+}
+@media screen and (min-width: 480px) {
+  .img__item {
+    width: 450px;
+    height: 404px;
+  }
 }
 @media screen and (min-width: 768px) {
   .img__item {
     width: 354px;
+    height: 440px;
     --items: 2;
   }
 }
 @media screen and (min-width: 1200px) {
   .img__item {
     width: 370px;
+    height: 404px;
     --items: 3;
   }
 }
@@ -1998,7 +2013,6 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -2007,6 +2021,11 @@ summary {
 }
 .clients__link:hover {
   border-color: var(--accent-cl);
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__link {
@@ -2286,7 +2305,7 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  width: 100%;
   height: 156px;
   margin-top: 60px;
   padding: 0;
